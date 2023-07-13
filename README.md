@@ -1,4 +1,4 @@
-#New Portfolio
+## New Portfolio
 
 Comienzo a desarrollar nuevamente mi Portafolios de trabajos, la idea principal es sumar nuevas tecnologias a diferencia de mi anterior proyecto.
 
