@@ -1,81 +1,166 @@
 import React, { useState } from "react";
+import Avatar from '../../assets/Avatar.png'
+import Avataronclick from '../../assets/Avataronclick.png'
+
+
 
 const Navbar = () => {
-    
-    const [show, setshow_modal_X] = useState(true);
+    const [searchInput, setSearchInput] = useState(true);
+    const [mdOptionsToggle, setMdOptionsToggle] = useState(true);
+    const [showMenu, setShowMenu] = useState(false);
+    const [avatarSrc, setAvatarSrc] = useState(Avatar);
+
+    const handleMouseEnter = () => {
+      setAvatarSrc(Avataronclick);
+  };
+
+  const handleMouseLeave = () => {
+      setAvatarSrc(Avatar);
+  };
+
 
     return (
-      <>
-        <div className="bg-gray-800/50">
-          <div className="px-4 py-14">
-            <div
-              className={`${
-                show ? "hidden" : "flex"
-              } container mx-auto  items-center px-4 justify-center md:px-10 py-20`}
-            >
-              <div className="container mx-auto flex justify-center items-center px-4 md:px-10 py-20 relative">
-                <button
-                  onClick={() => setshow_modal_X(true)}
-                  className="bg-white text-gray-800 py-5 px-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white rounded"
+        <div className="dark:bg-gray-900">
+            <div>
+                <div className="relative">
+                    {/* For md screen size */}
+                    <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"} bg-white dark:bg-gray-900 lg:hidden py-5 px-6 items-center justify-between`}>
+                        
+                        
+                    </div>
+                    {/* For md screen size */}
+                    {/* For large screens */}
+                    <div className="dark:bg-gray-900 bg-gray-50 px-6 py-9">
+                        <div className="container mx-auto flex items-center justify-between">
+                        <h1
+                    className="md:w-2/12 cursor-pointer text-gray-800 dark:text-white"
+                    aria-label="the Crib."
+                    onMouseEnter={handleMouseEnter} 
+                    onMouseLeave={handleMouseLeave} 
                 >
-                  Open Modal
-                </button>
-              </div>
-            </div>
-            <div
-              className={`${
-                show ? "flex" : "hidden"
-              } lg:max-w-[642px] md:max-w-[744px] max-w-[375px] mx-auto bg-white  md:px-6 px-4  lg:py-24 md:py-12 py-9`}
-            >
-              <div className="mx-auto relative">
-                <svg
-                  onClick={() => setshow_modal_X(false)}
-                  className="cursor-pointer absolute right-4 -top-10 z-10"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M7.28033 6.21967C6.98744 5.92678 6.51256 5.92678 6.21967 6.21967C5.92678 6.51256 5.92678 6.98744 6.21967 7.28033L10.9393 12L6.21967 16.7197C5.92678 17.0126 5.92678 17.4874 6.21967 17.7803C6.51256 18.0732 6.98744 18.0732 7.28033 17.7803L12 13.0607L16.7197 17.7803C17.0126 18.0732 17.4874 18.0732 17.7803 17.7803C18.0732 17.4874 18.0732 17.0126 17.7803 16.7197L13.0607 12L17.7803 7.28033C18.0732 6.98744 18.0732 6.51256 17.7803 6.21967C17.4874 5.92678 17.0126 5.92678 16.7197 6.21967L12 10.9393L7.28033 6.21967Z"
-                    fill="#373737"
-                  />
-                </svg>
-                <p className=" lg:text-4xl md:text-3xl text-3xl font-semibold leading-9 text-gray-800">
-                  Get 20% Discount
-                </p>
-                <p className="text-base leading-normal text-gray-600 lg:max-w-[512px] w-full mt-4">
-                  Be first to hear about our special offers, new arrivals and much
-                  more. Subscribe to our newsletter
-                </p>
-                <input
-                  type="Email"
-                  placeholder="Email Address"
-                  className="w-full focus:outline-none border border-gray-300 py-2 mt-6 px-3 placeholder:text-gray-600"
-                />
-                <div>
-                  <img
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/channnel.png"
-                    alt="perfume"
-                    className="mt-6 w-full lg:block md:hidden hidden"
-                  />
-                  <img
-                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/ch_md.png"
-                    alt
-                    className="lg:hidden md:block block mt-6 w-full"
-                  />
+                    Dev Javier
+                    <img width={80} height={80} src={avatarSrc} alt="Avatar" className="fill-stroke" />
+                </h1>
+                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        Skills
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">
+                                
+                                
+                                <div className="flex lg:hidden">
+                                    <button aria-label="show options" onClick={() => setMdOptionsToggle(!mdOptionsToggle)} className="text-black dark:text-white dark:hover:text-gray-300 hidden md:flex focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                                        <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 6H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M10 12H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M6 18H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button aria-label="open menu" onClick={() => setShowMenu(true)} className="text-black dark:text-white dark:hover:text-gray-300 md:hidden focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                                        <svg className="fill-stroke" width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 6H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M10 12H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M6 18H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* For small screen */}
+                    <div id="mobile-menu" className={`${showMenu ? "flex" : "hidden"} absolute dark:bg-gray-900 z-10 inset-0 md:hidden bg-white flex-col h-screen w-full`}>
+                        <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
+                            
+                            <button onClick={() => setShowMenu(false)} aria-label="close menu" className="focus:outline-none focus:ring-2 rounded focus:ring-gray-600">
+                                <svg className="fill-stroke text-gray-800 dark:text-white" width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L4 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M4 4L12 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div className="mt-6 p-4">
+                            <ul className="flex flex-col space-y-6">
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                        Home
+                                        <div>
+                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                        About
+                                        <div>
+                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                    Portfolio
+                                        <div>
+                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                        Skills
+                                        <div>
+                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                                        Contact
+                                        <div>
+                                            <svg className="fill-stroke text-black dark:text-white" width={12} height={12} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.5 3L7.5 6L4.5 9" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
                 </div>
-                <button className="bg-gray-800 text-white w-full py-3 mt-6 hover:bg-gray-700 duration-300">
-                  Subscribe
-                </button>
-              </div>
             </div>
-          </div>
         </div>
-      </>
     );
-  }
+}
+
 export default Navbar
