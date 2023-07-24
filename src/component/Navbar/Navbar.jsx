@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Avatar from '../../assets/Avatar.png'
 import Avataronclick from '../../assets/Avataronclick.png'
 
@@ -43,29 +44,39 @@ const Navbar = () => {
                 </h1>
                             <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                    <Link to= '/'>
+                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Home
-                                    </a>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                <Link to= '/about'>
+                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         About
-                                    </a>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                <Link to= '/portfolio'>
+                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Portfolio
-                                    </a>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                <Link to= '/skills'>
+                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Skills
-                                    </a>
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                <Link to= '/contact'>
+                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Contact
-                                    </a>
+                                        </a>
+                                    </Link>
                                 </li>
                             </ul>
                             <div className="md:w-2/12 justify-end flex items-center space-x-4 xl:space-x-8">

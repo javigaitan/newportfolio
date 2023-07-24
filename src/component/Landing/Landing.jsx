@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from '../Navbar/Navbar'
 import Footer from "../Footer/Footer";
+import SkillsCarrucel from '../SkillsCarrucel/SkillsCarrucel'
 import Bust from '../../assets/Bust.png';
 import BustCool from '../../assets/BustCool.png';
 import CV from '../../assets/GaitanJavier-IT-Full.pdf'
@@ -82,6 +84,8 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
+            <SkillsCarrucel />
+
             <Footer />
 
         </>
