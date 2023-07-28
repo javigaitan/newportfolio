@@ -114,7 +114,8 @@ const Navbar = () => {
                         </div>
                         <div className="mt-6 p-4">
                             <ul className="flex flex-col space-y-6">
-                                <li>
+                                <li> 
+                                  <Link to='/'>
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Home
                                         <div>
@@ -123,8 +124,10 @@ const Navbar = () => {
                                             </svg>
                                         </div>
                                     </a>
+                                    </Link>
                                 </li>
                                 <li>
+                                <Link to='about'>
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         About
                                         <div>
@@ -133,8 +136,12 @@ const Navbar = () => {
                                             </svg>
                                         </div>
                                     </a>
+                                    </Link>
+
                                 </li>
                                 <li>
+                                <Link to='portfolio'>
+
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     Portfolio
                                         <div>
@@ -143,8 +150,12 @@ const Navbar = () => {
                                             </svg>
                                         </div>
                                     </a>
+                                    </Link>
+
                                 </li>
                                 <li>
+                                <Link to='skills'>
+
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Skills
                                         <div>
@@ -153,8 +164,12 @@ const Navbar = () => {
                                             </svg>
                                         </div>
                                     </a>
+                                    </Link>
+
                                 </li>
                                 <li>
+                                <Link to='contact'>
+
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Contact
                                         <div>
@@ -163,6 +178,8 @@ const Navbar = () => {
                                             </svg>
                                         </div>
                                     </a>
+                                    </Link>
+
                                 </li>
                             </ul>
                         </div>
