@@ -26,10 +26,10 @@ const Portfolio = () => {
                                     <p className="text-xs text-gray-600 mt-2">descripcion del proyecto que realice</p>
                                     <div className="flex mt-4">
                                         <div>
-                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">12 months warranty</p>
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">info</p>
                                         </div>
                                         <div className="pl-2">
-                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">Complete box</p>
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">info2</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center justify-between py-4">
