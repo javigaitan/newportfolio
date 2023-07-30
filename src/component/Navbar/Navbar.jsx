@@ -140,7 +140,7 @@ const Navbar = () => {
 
                                 </li>
                                 <li>
-                                <Link to='portfolio'>
+                                <Link to='/portfolio'>
 
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                     Portfolio
@@ -154,7 +154,7 @@ const Navbar = () => {
 
                                 </li>
                                 <li>
-                                <Link to='skills'>
+                                <Link to='/skills'>
 
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Skills
@@ -168,7 +168,7 @@ const Navbar = () => {
 
                                 </li>
                                 <li>
-                                <Link to='contact'>
+                                <Link to='/contact'>
 
                                     <a href="javascript:void(0)" className="dark:text-white flex items-center justify-between hover:underline text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800">
                                         Contact

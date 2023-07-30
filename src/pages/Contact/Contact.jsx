@@ -49,7 +49,7 @@ const Contact = () => {
       <div className="w-full flex items-center justify-center my-12">
         <div className="absolute top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
           <p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
-            Contactate con nosotros
+            Enviame un Mensaje
           </p>
 
           <form ref={form} onSubmit={sendEmail}>
