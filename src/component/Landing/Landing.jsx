@@ -24,14 +24,14 @@ const Landing = () => {
     return (
         <>
             <Navbar />
-            <div className="px-30">
+            <div className="px-4 lg:px-8">
                 <div className="flex flex-wrap">
                     <div className="flex items-center w-full lg:w-1/2">
-                    <div className="max-w-2xl mb-8">
+                    <div className="max-w-2xl mb-4">
                       <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
                         Welcome to my Portfolios
                         </h1>
-                        <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+                        <p className="py-3 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
                           here is a text with something important for the moment there is nothing
                           here is a text with something important for the moment there is nothing
                           here is a text with something important for the moment there is nothing

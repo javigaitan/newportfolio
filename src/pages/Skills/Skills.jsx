@@ -9,9 +9,11 @@ import Github from "../../assets/skills/github1.png";
 import Redux from "../../assets/skills/redux.svg";
 import Node from "../../assets/skills/node.png";
 import Mysql from "../../assets/skills/mysql.svg";
-import Tail from "../../assets/skills/Tailwind_CSS_logo.svg.png";
+import Tail from "../../assets/skills/tailwind.png";
 import Boos from "../../assets/skills/Bootstrap_logo.svg.png";
-import Post from "../../assets/skills/postgresql.png";
+import Post from "../../assets/skills/postgres.png";
+import Sass from "../../assets/skills/sass.png";
+import Firebase from "../../assets/skills/firebase.jpg";
 
 
 
@@ -36,6 +38,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
+          
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -43,6 +46,16 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={Sass} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Sass</h3>
               </div>
             </div>
           </div>
@@ -143,6 +156,16 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Postgresql</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={Firebase} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Firebase</h3>
               </div>
             </div>
           </div>

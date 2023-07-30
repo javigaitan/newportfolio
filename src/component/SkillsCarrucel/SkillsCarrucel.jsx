@@ -10,9 +10,13 @@ import Github from "../../assets/skills/github1.png";
 import Redux from "../../assets/skills/redux.svg";
 import Node from "../../assets/skills/node.png";
 import Mysql from "../../assets/skills/mysql.svg";
-import Tail from "../../assets/skills/Tailwind_CSS_logo.svg.png";
+import Tail from "../../assets/skills/tailwind.png";
 import Boos from "../../assets/skills/Bootstrap_logo.svg.png";
-import Post from "../../assets/skills/postgresql.png";
+import Post from "../../assets/skills/postgres.png";
+import Sass from "../../assets/skills/sass.png";
+import Firebase from "../../assets/skills/firebase.jpg";
+
+
 
 const SkillsCarousel = () => {
   const settings = {
@@ -25,7 +29,7 @@ const SkillsCarousel = () => {
     autoplaySpeed: 1500, // Intervalo de cambio de imágenes en milisegundos
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
         },
@@ -46,9 +50,9 @@ const SkillsCarousel = () => {
   };
 
   return (
-    <div id="skills" className="w-full lg:h-screen p-2">
+    <div className="my-25">
+
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#000]">Skills</p>
         <Slider {...settings}>
           <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
           <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -67,6 +71,16 @@ const SkillsCarousel = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>CSS</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={Sass} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Sass</h3>
               </div>
             </div>
           </div>
@@ -169,9 +183,22 @@ const SkillsCarousel = () => {
               </div>
             </div>
           </div>
+
+          <div className="p-6  rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={Firebase} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Firebase</h3>
+              </div>
+            </div>
+          </div>
+
         </Slider>
       </div>
-    </div>
+            </div>
+
   );
 };
 
