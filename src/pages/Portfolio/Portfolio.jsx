@@ -11,6 +11,7 @@ import Sushi from '../../assets/Proyectos/Sushi Alta Cordoba.png';
 import Games from '../../assets/Proyectos/Video Games Store.png';
 import Hidromiel from '../../assets/Proyectos/Freyr Hidromiel.png';
 import Portafolio from '../../assets/Proyectos/Portafolio.png';
+import Footer from '../../component/Footer/Footer';
 
 
 
@@ -335,6 +336,8 @@ const Portfolio = () => {
                     
                 </div>
             </div>
+
+            <Footer/>
             </>
   )
 }

@@ -32,9 +32,9 @@ const Landing = () => {
                         Welcome to my Portfolios
                         </h1>
                         <p className="py-3 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-                          here is a text with something important for the moment there is nothing
-                          here is a text with something important for the moment there is nothing
-                          here is a text with something important for the moment there is nothing
+                        Hi! Mi name is Javier, I’m a Full Stack Developer, at the moment I’m expanding my knowledge to Testing QA.
+                        <br/>
+                        I was part of several proyects where I perform different tasks and quickly respons to contingens and new needs.
                           </p>
                           <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
                             <a

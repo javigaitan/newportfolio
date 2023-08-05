@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Avatar from '../../assets/Avatar.png'
 import Avataronclick from '../../assets/Avataronclick.png'
 
@@ -39,41 +39,43 @@ const Navbar = () => {
                     onMouseEnter={handleMouseEnter} 
                     onMouseLeave={handleMouseLeave} 
                 >
+                    <Link to= '/'className="text-white">
                     Dev Javier
-                    <img width={80} height={80} src={avatarSrc} alt="Avatar" className="fill-stroke" />
+                    <img width={80} height={80} src={avatarSrc} alt="Avatar" className="fill-stroke " />
+                    </Link>
                 </h1>
-                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
+                            <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8 font-medium text-center text-white">
                                 <li>
                                     <Link to= '/'>
-                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                      <a href="javascript:void(0)" className="text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Home
                                         </a>
                                     </Link>
                                 </li>
                                 <li>
                                 <Link to= '/about'>
-                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                      <a href="javascript:void(0)" className="text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         About
                                         </a>
                                     </Link>
                                 </li>
                                 <li>
                                 <Link to= '/portfolio'>
-                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                      <a href="javascript:void(0)" className="text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Portfolio
                                         </a>
                                     </Link>
                                 </li>
                                 <li>
                                 <Link to= '/skills'>
-                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                      <a href="javascript:void(0)" className="text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Skills
                                         </a>
                                     </Link>
                                 </li>
                                 <li>
                                 <Link to= '/contact'>
-                                      <a href="javascript:void(0)" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
+                                      <a href="javascript:void(0)" className="text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">
                                         Contact
                                         </a>
                                     </Link>

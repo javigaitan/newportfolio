@@ -1,16 +1,18 @@
-import React from 'react';
-import { useRef } from "react";
+import React, { useRef, useState } from 'react';
 import Swal from 'sweetalert2';
 import emailjs from "@emailjs/browser";
 import Navbar from '../../component/Navbar/Navbar';
 import Footer from '../../component/Footer/Footer';
+import Loader from '../../component/Loader/Loader';
 
 
 const Contact = () => {
-    const form = useRef();
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     emailjs
       .sendForm(
@@ -22,20 +24,23 @@ const Contact = () => {
       .then(() => {
         Swal.fire({
           title: "Éxito",
-          text: "El correo se envió correctamente",
+          text: "The email was sent successfully",
           icon: "success",
-          confirmButtonText: "Aceptar",
+          confirmButtonText: "Confirm",
         });
         form.current.reset();
       })
       .catch((error) => {
         Swal.fire({
           title: "Error",
-          text: "Ocurrió un error al enviar el correo",
+          text: "Opps, Send Error",
           icon: "error",
-          confirmButtonText: "Aceptar",
+          confirmButtonText: "Confirm",
         });
         console.error("Error sending email:", error);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -43,20 +48,20 @@ const Contact = () => {
     <>
     <Navbar/>
     
-    
 
     <div id="contact" className="absolute top-40  w-full">
       <div className="w-full flex items-center justify-center my-12">
         <div className="absolute top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
           <p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
-            Enviame un Mensaje
+          Send your message
+
           </p>
 
           <form ref={form} onSubmit={sendEmail}>
             <div className="md:flex items-center mt-12">
               <div className="md:w-72 flex flex-col">
                 <label className="text-base font-semibold leading-none text-gray-800">
-                  Nombre
+                  Name
                 </label>
                 <input
                   tabIndex={0}
@@ -85,7 +90,7 @@ const Contact = () => {
             <div>
               <div className="w-full flex flex-col mt-8">
                 <label className="text-base font-semibold leading-none text-gray-800">
-                  Consulta
+                  Message
                 </label>
                 <textarea
                   tabIndex={0}
@@ -103,10 +108,13 @@ const Contact = () => {
                 type="submit"
                 className="mt-9 px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md"
               >
-                Enviar
+                Send
               </button>
             </div>
           </form>
+          {isLoading && <Loader />}
+
+          
         </div>
       </div>
     </div>
