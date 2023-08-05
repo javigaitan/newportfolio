@@ -9,7 +9,7 @@ const About = () => {
     <>
     <Navbar/>
 
-    <div className='px-4'>
+    <div className='p-5'>
         <div className="dark:bg-gray-900 ">
           <div className="mx-auto container w-full flex items-center md:flex-row flex-col justify-between px-6 lg:px-0">
             <div className="flex flex-col justify-start items-start lg:w-2/5 px-2 lg:px-0">
@@ -34,7 +34,7 @@ const About = () => {
                 <div>
                   <p className="text-gray-800 dark:text-white text-sm lg:text-base font-medium leading-none">
                     Hobby: <span className="font-semibold md:font-medium">martial arts, soccer, skateboarding and reading
- </span>
+                    </span>
                   </p>
                 </div>
                 
@@ -51,8 +51,11 @@ const About = () => {
               </div>
               <div className="mt-8">
                 <p className="text-gray-800 dark:text-white lg:text-base text-sm leading-normal">
-                  Another writing challenge can be to take the individual sentences in the random paragraph and incorporate a single sentence from that into a new paragraph to create a short story. Unlike the random sentence generator, the sentences from the random paragraph will have some connection to one another so it will be a bit different. You also won't know exactly how many sentences will appear in the random paragraph.Another writing challenge can be to take the individual sentences in the random paragraph and incorporate a single sentence from that into a new paragraph to create a
-                  short story. Unlike the random sentence generator, the sentences from the random paragraph will have some connection to one another so it will be a bit different. You also won't know exactly how many sentences will appear in the random paragraph.
+                Hi! Mi name is Javier, I’m a Full Stack Developer, at the moment I’m expanding my knowledge to Testing QA.
+                I was part of several proyects where I perform different tasks and quickly respons to contingens and new needs.
+                I'm very confortable looking for Solutions and leading. 
+                About muy experiences, I was part of Costumer Supporting area as a team leader.
+                Through that experience I could learn and improve many soft skills that are very useful at IT enviroment.
                 </p>
               </div>
               
