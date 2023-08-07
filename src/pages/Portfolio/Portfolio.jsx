@@ -12,6 +12,7 @@ import Games from '../../assets/Proyectos/Video Games Store.png';
 import Hidromiel from '../../assets/Proyectos/Freyr Hidromiel.png';
 import Portafolio from '../../assets/Proyectos/Portafolio.png';
 import Footer from '../../component/Footer/Footer';
+import One from '../../assets/Proyectos/Somos One Touch.png';
 
 
 
@@ -144,7 +145,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={App} className="w-full h-44" />
+                                <img src={One} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -152,12 +153,12 @@ const Portfolio = () => {
                                 </div>
                                 <div className="p-4">
                                     <div className="flex items-center">
-                                        <h2 className="text-lg font-semibold">Search Food</h2>
+                                        <h2 className="text-lg font-semibold">One Touch</h2>
                                     </div>
-                                    <p className="text-xs text-gray-600 mt-2">Una App para consultar datos de una Api (Recetas) y poder verlos segun parametros definidos y acomodarlos segun filtros configurados. Es posible ver el detalles de la recetas seleccionadas.</p>
+                                    <p className="text-xs text-gray-600 mt-2">Una App realizada para una StartUp de educacion, una academia de idiomas. Se sumaron funcionalidades para facilitar comunicacion, leads de ventas, informacion de cursos, etc.</p>
                                     <div className="flex mt-4">
                                     <div>
-                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">React</p>
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">HTML</p>
                                         </div>
                                         <div className="pl-2">
                                             <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">Js</p>
@@ -165,10 +166,13 @@ const Portfolio = () => {
                                         <div className="pl-2">
                                             <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">CSS</p>
                                         </div>
+                                        <div className="pl-2">
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">SASS</p>
+                                        </div>
                                         
                                     </div>
                                     <div className="flex items-center justify-between py-4">
-                                        <Link to="https://recipe-app-mu-roan.vercel.app/" className="text-indigo-700 text-xl font-semibold hover:text-indigo-900">
+                                        <Link to="https://javigaitan.github.io/oneTouch/" className="text-indigo-700 text-xl font-semibold hover:text-indigo-900">
                                             Demo
                                             </Link>
                                             </div>
@@ -284,6 +288,41 @@ const Portfolio = () => {
                                     </div>
                                     <div className="flex items-center justify-between py-4">
                                         <Link to="https://portfoliogaitan.000webhostapp.com/" className="text-indigo-700 text-xl font-semibold hover:text-indigo-900">
+                                            Demo
+                                            </Link>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* Card 1 Ends */}
+                        {/* Card 1 */}
+                        <div className="mx-2 w-72 lg:mb-0 mb-8">
+                            <div>
+                                <img src={App} className="w-full h-44" />
+                            </div>
+                            <div className="bg-white">
+                                <div className="flex items-center justify-between px-4 pt-4">
+                                    
+                                </div>
+                                <div className="p-4">
+                                    <div className="flex items-center">
+                                        <h2 className="text-lg font-semibold">Search Food</h2>
+                                    </div>
+                                    <p className="text-xs text-gray-600 mt-2">Una App para consultar datos de una Api (Recetas) y poder verlos segun parametros definidos y acomodarlos segun filtros configurados. Es posible ver el detalles de la recetas seleccionadas.</p>
+                                    <div className="flex mt-4">
+                                    <div>
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">React</p>
+                                        </div>
+                                        <div className="pl-2">
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">Js</p>
+                                        </div>
+                                        <div className="pl-2">
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">CSS</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div className="flex items-center justify-between py-4">
+                                        <Link to="https://recipe-app-mu-roan.vercel.app/" className="text-indigo-700 text-xl font-semibold hover:text-indigo-900">
                                             Demo
                                             </Link>
                                             </div>
