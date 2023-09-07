@@ -41,7 +41,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-              <img className="w-full" src={PHOTO} alt="laptops" />
+              <img className="w-full" src={PHOTO} alt="Foto de Javier de frente " />
             </div>
           </div>
           <div className="mx-auto container w-full flex xl:flex-row flex-col justify-between items-start mt-12 px-6 lg:px-0">

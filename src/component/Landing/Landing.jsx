@@ -76,7 +76,7 @@ const Landing = () => {
                                 width="416"
                                 height="417"
                                 className="object-cover"
-                                alt="Hero Illustration"
+                                alt="Avatar ilustrativo de javier con una computadora "
                                 loading="eager"
                                 placeholder="blur"
                             />

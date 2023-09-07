@@ -40,7 +40,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Nova} className="w-full h-44" />
+                                <img src={Nova} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -78,7 +78,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Pokemon} className="w-full h-44" />
+                                <img src={Pokemon} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -116,7 +116,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Games} className="w-full h-44" />
+                                <img src={Games} className="w-full h-44"  alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -154,7 +154,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={One} className="w-full h-44" />
+                                <img src={One} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -193,7 +193,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Aikido} className="w-full h-44" />
+                                <img src={Aikido} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -232,7 +232,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Sushi} className="w-full h-44" />
+                                <img src={Sushi} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -271,7 +271,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Portafolio} className="w-full h-44" />
+                                <img src={Portafolio} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -307,7 +307,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={App} className="w-full h-44" />
+                                <img src={App} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -343,7 +343,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Hidromiel} className="w-full h-44" />
+                                <img src={Hidromiel} className="w-full h-44"  alt='Foto del sitio indicado en el titulo'/>
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -396,7 +396,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={QA} className="w-full h-44" />
+                                <img src={QA} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
