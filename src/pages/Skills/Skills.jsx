@@ -14,6 +14,8 @@ import Boos from "../../assets/skills/Bootstrap_logo.svg.png";
 import Post from "../../assets/skills/postgres.png";
 import Sass from "../../assets/skills/sass.png";
 import Firebase from "../../assets/skills/firebase.jpg";
+import QA from "../../assets/skills/QAMANUAL.png";
+
 
 
 
@@ -165,6 +167,17 @@ const Skills = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>Firebase</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <img src={QA} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>QA Manual</h3>
               </div>
             </div>
           </div>
