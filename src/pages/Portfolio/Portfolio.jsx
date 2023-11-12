@@ -13,8 +13,8 @@ import Hidromiel from '../../assets/Proyectos/Freyr Hidromiel.png';
 import Portafolio from '../../assets/Proyectos/Portafolio.png';
 import Footer from '../../component/Footer/Footer';
 import One from '../../assets/Proyectos/Somos One Touch.png';
+import Med from '../../assets/Proyectos/Monosnap Innovamed Medicina Sexual.png';
 import QA from '../../assets/Proyectos/Mercury Tours.png';
-
 
 
 
@@ -40,7 +40,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Nova} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
+                                <img src={Nova} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -78,7 +78,46 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Pokemon} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
+                                <img src={Med} className="w-full h-44" />
+                            </div>
+                            <div className="bg-white">
+                                <div className="flex items-center justify-between px-4 pt-4">
+                                    
+                                </div>
+                                <div className="p-4">
+                                    <div className="flex items-center">
+                                        <h2 className="text-lg font-semibold">Innovamed Medicina Sexual</h2>
+                                    </div>
+                                    <p className="text-xs text-gray-600 mt-2">Se realiza proyecto para un Cirujano que esta en la creacion de su clinica medica, especializada en medicina sexual. Segun los requerimientos se realiza una SPA funcional para la recoleccion de leads, conectar clientes con el Whatsapp de la secretaria.</p>
+                                    <div className="flex mt-4">
+                                        <div>
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">React</p>
+                                        </div>
+                                        <div className="pl-2">
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">Js</p>
+                                        </div>
+                                        <div className="pl-2">
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">Tailwind CSS</p>
+                                        </div>
+                                        <div className="pl-2">
+                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">NodeJs</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center justify-between py-4">
+                                        <Link to="https://innovamedcba.com/" className="text-indigo-700 text-xl font-semibold hover:text-indigo-900">
+                                            Demo
+                                            </Link>
+                                            </div>
+                                    </div>
+                               </div>
+                            </div>
+                        {/* Card 1 Ends */}
+
+
+                        {/* Card 1 */}
+                        <div className="mx-2 w-72 lg:mb-0 mb-8">
+                            <div>
+                                <img src={Pokemon} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -116,7 +155,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Games} className="w-full h-44"  alt='Foto del sitio indicado en el titulo' />
+                                <img src={Games} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -154,7 +193,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={One} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
+                                <img src={One} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -193,7 +232,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Aikido} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
+                                <img src={Aikido} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -232,7 +271,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Sushi} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
+                                <img src={Sushi} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -271,7 +310,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Portafolio} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
+                                <img src={Portafolio} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -307,7 +346,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={App} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
+                                <img src={App} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -343,7 +382,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={Hidromiel} className="w-full h-44"  alt='Foto del sitio indicado en el titulo'/>
+                                <img src={Hidromiel} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -396,7 +435,7 @@ const Portfolio = () => {
                         {/* Card 1 */}
                         <div className="mx-2 w-72 lg:mb-0 mb-8">
                             <div>
-                                <img src={QA} className="w-full h-44" alt='Foto del sitio indicado en el titulo' />
+                                <img src={QA} className="w-full h-44" />
                             </div>
                             <div className="bg-white">
                                 <div className="flex items-center justify-between px-4 pt-4">
@@ -406,7 +445,7 @@ const Portfolio = () => {
                                     <div className="flex items-center">
                                         <h2 className="text-lg font-semibold">Mercury Tours</h2>
                                     </div>
-                                    <p className="text-xs text-gray-600 mt-2">Se realizan diversas pruebas  de desempeño en el sitio (URL: https://demo.guru99.com/test/newtours/index.php) para validar bugs, criticidad, y generar informes efectivos para mejorar el desempeño.</p>
+                                    <p className="text-xs text-gray-600 mt-2">Se realizan diversas pruebas de desempeño en el sitio (URL: https://demo.guru99.com/test/newtours/index.php) para validar bugs, criticidad, y generar informes efectivos para mejorar el desempeño.</p>
                                     
                                     <div className="flex items-center justify-between py-4">
                                         <Link to="https://drive.google.com/drive/folders/1eKSUfybA8kiNsafNXVIWYo_wiByLO1kT?usp=sharing" className="text-indigo-700 text-xl font-semibold hover:text-indigo-900">
@@ -417,43 +456,8 @@ const Portfolio = () => {
                                </div>
                             </div>
                         {/* Card 1 Ends */}
-                        {/* Card 1 
-                        <div className="mx-2 w-72 lg:mb-0 mb-8">
-                            <div>
-                                <img src={Nova} className="w-full h-44" />
-                            </div>
-                            <div className="bg-white">
-                                <div className="flex items-center justify-between px-4 pt-4">
-                                    
-                                </div>
-                                <div className="p-4">
-                                    <div className="flex items-center">
-                                        <h2 className="text-lg font-semibold">Nova Academy</h2>
-                                    </div>
-                                    <p className="text-xs text-gray-600 mt-2">Un servicio para compra y venta de cursos, con la posibilidad como usuario de comprar y vender contenido educativo. Conectado con Mercado Pago y con un administrador para gestionar cursos y usuario existentes.</p>
-                                    <div className="flex mt-4">
-                                        <div>
-                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">React</p>
-                                        </div>
-                                        <div className="pl-2">
-                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">Js</p>
-                                        </div>
-                                        <div className="pl-2">
-                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">Tailwind CSS</p>
-                                        </div>
-                                        <div className="pl-2">
-                                            <p className="text-xs text-gray-600 px-2 bg-gray-200 py-1">NodeJs</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center justify-between py-4">
-                                        <Link to="https://pf-nova-academy.vercel.app/#/" className="text-indigo-700 text-xl font-semibold hover:text-indigo-900">
-                                            Informe
-                                            </Link>
-                                            </div>
-                                    </div>
-                               </div>
-                            </div>
-                        {/* Card 1 Ends */}
+                        
+                        
                         </div>
                         </div>
 

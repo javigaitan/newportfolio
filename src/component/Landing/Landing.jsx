@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 import SkillsCarrucel from '../SkillsCarrucel/SkillsCarrucel';
 import Bust from '../../assets/Bust.png';
 import BustCool from '../../assets/BustCool.png';
-import CV from '../../assets/Gaitan Javier IT -CV';
+import CV from '../../assets/Gaitan Javier IT -CV.pdf';
 
 const Landing = () => {
     const [searchInput, setSearchInput] = useState(true);
